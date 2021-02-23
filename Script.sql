@@ -1,9 +1,12 @@
-DECLARE 
- v_sum NUMBER := 0;
-BEGIN
-    for i in 1..10
+declare
+    v_cnt pls_integer;
+begin
+    v_cnt := 0;
+    DBMS_OUTPUT.PUT_LINE('---------------¿œπ› for----------------') ;
+    for idx in 1..3
     loop
-     v_sum := v_sum +i;
+        v_cnt := v_cnt+1;
+        DBMS_OUTPUT.PUT_LINE('∑Á«¡'|| v_cnt) ;   
     end loop;
-    DBMS_OUTPUT.PUT_LINE('1ÏóêÏÑú 10ÍπåÏßÄÏùò Ìï© :' || v_sum);
-end;
+    DBMS_OUTPUT.PUT_LINE('-----------------------------------');
+END;
