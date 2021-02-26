@@ -10,7 +10,9 @@ begin
 
     if v_cnt > 0 then
         DBMS_OUTPUT.PUT_LINE('테이블 emp 가 존재 합니다');
-    else
+    elsif
         dbms_output.PUT_LINE('테이블 emp가 존재 하지 않습니다');
+    else 
+        dbms_output.PUT_LINE('테이블 emp는 뭔데?');
     end if;
 end;
