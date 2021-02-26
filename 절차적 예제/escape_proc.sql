@@ -8,3 +8,4 @@ begin
         exit when v_num >3 ;  -- loop 문 탈축에 가장 적합한 방법
     end loop;
 end;
+
