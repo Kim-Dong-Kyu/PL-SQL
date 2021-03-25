@@ -25,5 +25,5 @@ begin
 end;
 
 
-select text from user_source where name = 'tr_emp_ins_upd_validate'; --오랔르 트리거 스크립트 조회
+select text from user_source where name = 'tr_emp_ins_upd_validate'; --오라클 트리거 스크립트 조회
 validateing gk
