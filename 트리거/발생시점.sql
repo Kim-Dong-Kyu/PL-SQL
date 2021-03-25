@@ -7,6 +7,6 @@ CREATE OR REPLACE TRIGGER  TR_EXAM
     FOR EACH ROW
 BEGIN
      /*
-       트리거 내용
+       트리거 내용을 작성
      */
 end;
