@@ -3,7 +3,7 @@
 declare
     v_name emp.ename%Type;
 
-    cursor ename_cursor is
+    cursor ename_cursor is -- DECLARE 절 커서 명시
         select ename
         from emp
         where empno = 7788;  -- 커서를 지정하다
