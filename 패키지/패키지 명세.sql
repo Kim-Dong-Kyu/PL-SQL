@@ -13,7 +13,7 @@ is
      --공용서브프로그램 선언
      function get_wage(a.empno number) return number;
      procedure raise_bounce(a_empno number, a_amt number);
-end;-- 패키지 명세에서는 end 는 이썽야 하지만  begin이 없다
+end;-- 패키지 명세에서는 end 는 있어야 하지만  begin이 없다
 
 
 
