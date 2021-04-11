@@ -50,3 +50,21 @@ is
 begin
     v_last_wage :=1;
 end;
+
+--==========패키지 변수접근  =============== 
+DECLARE 
+    v_var number;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('last wage:' || PKG_EMP.v_last_wage);
+end;
+
+--==========패키지 서브프로그램 사용=========== 
+DECLARE
+    v_var number;
+BEGIN
+    v_var := pkg_emp.GET_WAGE(7788);
+end;
+
+--==========SQL 패키지 변수 접근 =============== 
+SELECT pkg_emp.v_last_wage
+from dual
